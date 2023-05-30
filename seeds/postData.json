@@ -1,0 +1,14 @@
+[
+    {
+        "userId": "1",
+        "title": "New Post",
+        "post": "A new blog starter seed. Some lorem ipsum here.",
+        "date": "4/9/2023"
+    },
+    {
+        "userId": "1",
+        "title": "New Post Number 2",
+        "post": "A second blog post",
+        "date": "4/9/2023"
+    }
+]

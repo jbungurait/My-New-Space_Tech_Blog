@@ -12,8 +12,7 @@
 <body>
   <header>
     <h1>Welcome to the New Space Tech Blog</h1>
-  </header>
-  <nav>
+      <nav>
     <a href="/">Home</a>
     <!-- If the user is logged in, show a logout button -->
     {{#if loggedIn}}
@@ -22,15 +21,15 @@
     <a href="/login">Login</a>
     {{/if}}
   </nav>
+  </header>
   <main>
-    {{{body}}}
-    <aside>
-      <h2>Check out the latest posts!</h2>
-    </aside>
-    <div class="blogpost">
-      
-    </div>
+    {{{ body }}}
+   
   </main>
+  <footer>
+
+  </footer>
+
   {{#if loggedIn}}
   <script src="/js/logout.js"></script>
   {{/if}}

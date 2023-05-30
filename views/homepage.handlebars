@@ -1,0 +1,22 @@
+<!-- Loop over each object in the projects array -->
+{{#each blogposts as |blogpost| }}
+<div class="row mb-4 blogpost">
+  <div class="col-md-5">
+    <h2>
+      <!-- Call helper function with triple brackets to render the emoji span as HTML -->
+      <a href="/blogpost/{{blogpost.id}}">{{blogpost.title}}</a>
+    </h2>
+    <p>
+     
+      <!-- Pass needed_funding value to the helper function -->
+      <span class="">{{}}</span>
+    </p>
+    <p>Created by {{blogpost.user.userName}} </p>
+  </div>
+  <div class="col-md-7">
+    <p>
+      {{blogpost.post}}
+    </p>
+  </div>
+</div>
+{{/each}}

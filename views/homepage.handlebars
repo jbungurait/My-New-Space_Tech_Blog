@@ -1,4 +1,5 @@
 <!-- Loop over each object in the projects array -->
+
 {{#each blogposts as |blogpost| }}
 <div class="row mb-4 blogpost">
   <div class="col-md-5">
@@ -10,7 +11,7 @@
      
       <!-- Pass needed_funding value to the helper function -->
     </p>
-    <p>Created by {{blogpost.user.userName}} </p>
+    <p>Created by {{blogpost.user.userName}} on {{blogpost.date}}</p>
   </div>
   <div class="col-md-7">
     <p>

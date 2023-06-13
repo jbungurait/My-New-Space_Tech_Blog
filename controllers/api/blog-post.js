@@ -8,7 +8,7 @@ router.get("/", withAuth, async (req, res) => {
       include: [
         {
           model: User,
-          attributes: ["userName"],
+          attributes: ["username"],
         },
         {
           model: Comments,
@@ -35,7 +35,7 @@ router.get('/:id', withAuth, async (req, res) =>
     const blogPost = await BlogPost.findByPk(req.params.id, {
       include: [{
         module: User,
-        attributes: ["userName"],
+        attributes: ["username"],
       },
     {
       module: Comments,
